@@ -6,11 +6,18 @@
         body {
             margin: 0;
             padding: 0;
+            overflow: hidden;
+            overflow: -moz-hidden-unscrollable;
+        }
+
+        canvas {
+            width: 100%;
+            height: 100%;
         }
     </style>
 </head>
 <body>
-    <canvas id="map" width="506" height="506"></canvas>
+    <canvas oncontextmenu="return false" id="map"></canvas>
 
     <script type="application/javascript" src="./app.js"></script>
 </body>
